@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  <div id="heading">
+  <h1 id=title>Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </div>
+
+  <div id="main">
+    <form id="survey-form">
+    <div id="input fields">
+
+        <label id="name-label">Name: </label><br>
+        <input id="name" class="form" required placeholder="Full name"/><br>
+        <label id="email-label">Email: </label><br>
+        <input id="email" type="email" class="form" required placeholder="xxx@email.com"/><br>
+        <label id="number-label">Age: </label><br>
+        <input id="number" type="number" class="form" required min="5" max="99" placeholder="12+"/><br>
+        <br>
+      </div>
+      <div id="dropdown-div">
+        <label id="dropdown-label"><b>Which option best describes your current role?</b></label><br>
+        <br>
+        <select id="dropdown" class="form">
+          <option>Select current role</option>
+          <option>Student</option>
+          <option>Full time job</option>
+          <option>Full time learner</option>
+          <option>not to say</option>
+          <option>other</option>
+        </select>
+      </div><br>
+
+      <div id="botton-area">
+        <label><b>Would you recommend freeCodeCamp to a friend?</b></label><br>
+        <br>
+          <input type="radio" class="radio-inline" value="definitely" name="gender"/> Definitely<br>
+          <input type="radio" class="radio-inline" value="maybe" name="gender"/> Maybe<br>
+          <input type="radio" class="radio-inline" value="not sure" name="gender"/> Not sure<br>
+      </div><br>
+
+      <div id="botton-area">
+        <label id="dropdown-label"><b>What is your favorite feature of freeCodeCamp?</b></label><br>
+        <br>
+        <select id="dropdown" class="form">
+            <option>Select current role</option>
+            <option>Challenges</option>
+            <option>Projects</option>
+            <option>Community</option>
+            <option>Open source</option>
+          </select> 
+      </div><br>
+
+
+      <div id="botton-area">
+        <label><b>What would you like to see improved? (Check all that apply)</b></label><br>
+        <br>
+        <input type="checkbox" value="xx"/> Front-end Projects<br>
+        <input type="checkbox" value="xx"/> Back-end Projects<br>
+        <input type="checkbox" value="xx"/> Data Visualization<br>
+        <input type="checkbox" value="xx"/> Challenges<br>
+        <input type="checkbox" value="xx"/> Open Source Community<br>
+        <input type="checkbox" value="xx"/> Gitter help rooms<br>
+        <input type="checkbox" value="xx"/> Videos<br>
+        <input type="checkbox" value="xx"/> City Meetups<br>
+        <input type="checkbox" value="xx"/> Wiki<br>
+        <input type="checkbox" value="xx"/> Forum<br>
+        <input type="checkbox" value="xx"/> Additional Courses<br>
+      </div><br>
+
+
+      <div id="ending">
+        <label id="comment-label"><b>Any comments or suggestions?</b></label><br>
+        <br>
+        <textarea style="height:120px" class="form" placeholder="Please feel free to write a review..."></textarea><br>
+        <br>
+        <input id="submit" type="submit" value="Submit" class="form"/><br>
+      </div>
+    </form>
+  </div>
+
+ 
+</body>
+</html>
